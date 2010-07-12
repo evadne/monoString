@@ -34,9 +34,35 @@
 
 
 
-	}
-	
+//	Copying
 
+	String.prototype.clone = function () {
+			
+		return this.slice(0);
+			
+	}
+
+
+
+
+
+//	Formatting
+
+	String.prototype.pad = function (destinationLength, paddingString) {
+	
+		if (!destinationLength) return this;
+		if (this.length >= destinationLength) return this;
+
+		paddingString = paddingString || "0";
+	
+		var finalString = this.clone();
+	
+		for (var i = 0; i <= (destinationLength - this.length - 1); i++)
+		finalString = (paddingString + finalString);
+		
+		return finalString;
+		
+	}
 
 
 
