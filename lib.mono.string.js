@@ -1,4 +1,4 @@
-//	lib.monoStringAdditions.js
+//	lib.mono.string.js
 //	Evadne Wu at Iridia, 2010
 
 
@@ -6,6 +6,7 @@
 
 
 
+	mono.stringAdditions = true;
 
 
 
