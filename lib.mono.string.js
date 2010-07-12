@@ -46,6 +46,18 @@
 
 
 
+//	Replacing
+
+	String.prototype.replaceAt = function (startingIndex, characters) {
+
+		return String(this.substr(0, startingIndex) + characters + this.substr(startingIndex + characters.length));
+
+	}
+
+
+
+
+
 //	Formatting
 
 	String.prototype.pad = function (destinationLength, paddingString) {
@@ -62,6 +74,15 @@
 		
 		return finalString;
 		
+	}
+	
+	
+	String.prototype.capitalize = function () {
+	
+		var finalString = this.clone();
+	
+		return finalString.replace(/^[a-z]/, finalString.charAt(0).toUpperCase())
+	
 	}
 
 
