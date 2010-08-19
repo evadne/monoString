@@ -14,7 +14,7 @@
 
 //	!Introspection
 
-	String.prototype.__defineGetter__("getByteLength", function () {
+	String.prototype.getByteLength = function () {
 	
 	//	Assume UTF-8
 	
@@ -28,7 +28,7 @@
 		
 		return totalBytes;
 	
-	});
+	}
 
 
 
